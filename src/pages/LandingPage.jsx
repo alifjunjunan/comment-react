@@ -60,8 +60,8 @@ const LandingPage = (props) => {
                                     </FormControl>
                                     <Button colorScheme='cyan' size={{ base: 'xs', md: 'md' }} fontSize={{ base: '10px', md: '16px' }} mt='10px' w='100%' type='submit' onClick={handdleLogin}>Login</Button>
                                     <Box mt='15px' display='flex' justifyContent='center'>
-                                        <Text fontSize={{ base: '9px', md: '15px' }} mr='5px'>Don't have an account?</Text>
-                                        <Text p='1px 7px' fontWeight='bold' fontSize={{ base: '8px', md: '14px' }} backgroundColor='#0097e6' borderRadius='8px' color='white' boxShadow='md'>
+                                        <Text fontSize={{ base: '8px', md: '15px' }} mr='5px'>Don't have an account?</Text>
+                                        <Text p='1px 7px' fontWeight='bold' fontSize={{ base: '7px', md: '14px' }} backgroundColor='#0097e6' borderRadius='8px' color='white' boxShadow='md'>
                                             <Link to='/register'>
                                                 Sign Up
                                             </Link>
