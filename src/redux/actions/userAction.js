@@ -6,7 +6,6 @@ export const loginAction = (email, password) => {
         try {
             let res = await axios.post(`${API_URL}/user/login`, { email, password })
             if (res.data.success) {
-                // console.log('isi login', res.data.dataUser[0])
                 localStorage.setItem('data', JSON.stringify(res.data.dataUser[0]))
                 dispatch({
                     type: 'LOGIN_SUCCESS',
@@ -33,7 +32,6 @@ export const keepLoginAction = () => {
                         type: 'LOGIN_SUCCESS',
                         payload: res.data.dataUser
                     })
-
                     return { success: res.data.success }
                 }
             }

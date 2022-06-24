@@ -14,7 +14,6 @@ import { API_URL } from '../helper'
 const HomePage = (props) => {
     const [dataDiary, setDataDiary] = useState([])
     const [isLoading, setIsLoading] = useState(true)
-    const momentLocal = moment.locale()
     const colorTags = ['#FFC312', '#12CBC4', '#78e08f', '#40739e', '#8c7ae6']
     const dispatch = useDispatch()
     const { iduser } = useSelector((state) => {
@@ -94,7 +93,6 @@ const HomePage = (props) => {
                                 <Text>Tags :</Text>
                                 <Box display='flex' ml='3px'>
                                     {value.tag.map((item, index) => { 
-                                        
                                        if (index <= 4) return (
                                             <Box mr='5px' p='2px 5px' borderRadius='5px' backgroundColor={colorTags[Math.floor(Math.random() * 5)]} color='white' key={index}>
                                                 <Text fontSize='12px' fontWeight='bold'> {item} </Text>
@@ -119,10 +117,6 @@ const HomePage = (props) => {
     }
     return (
         <>
-            {
-
-
-            }
             {
                 isLoading ?
                     <LoadingPage />
