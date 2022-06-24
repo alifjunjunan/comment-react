@@ -27,7 +27,6 @@ const HomePage = (props) => {
 
     const getComments = async () => {
         try {
-
             setIsLoading(true)
             let res = await dispatch(getDiaryAction(iduser))
             if (res.success) {
@@ -67,7 +66,9 @@ const HomePage = (props) => {
                     'Your file has been deleted.',
                     'success'
                 )
-                getComments()
+                setTimeout(() => {
+                    getComments()
+                }, 500);
             }
         })
     }

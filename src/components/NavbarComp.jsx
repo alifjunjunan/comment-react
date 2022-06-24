@@ -26,7 +26,7 @@ const NavbarComp = (props) => {
 
     return (
         <>
-            <Box height='70px' backgroundColor='#7D97F4'>
+            <Box height='70px' backgroundColor='#7D97F4' position='sticky' w='100%' top='0' zIndex='1'>
                 <Box padding='20px' display='flex' justifyContent='end'>
                     <Text fontSize={{ base: '15px', md: '18px' }} mx='20px' color='white' pt='5px'><Link to='/home'>Home</Link></Text>
                     <Menu>
