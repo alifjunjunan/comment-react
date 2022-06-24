@@ -1,5 +1,3 @@
-import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { useState, useEffect } from 'react';
 import LandingPage from './pages/LandingPage';
 import { Route, Routes } from 'react-router-dom';
@@ -13,10 +11,6 @@ import AddDiaryPage from './pages/AddDiaryPage';
 import DetailDairyPage from './pages/DetailDairyPage';
 
 function App() {
-
-  const [content, setContent] = useState(null)
-  const [initialContent, setInitialContent] = useState('type here')
-  const [displayContent, setDisplayContent] = useState('none')
   const [isloading, setIsLoading] = useState(true)
   const dispatch = useDispatch()
 

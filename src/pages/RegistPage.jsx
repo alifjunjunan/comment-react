@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import { Box, Heading, Text, Image, FormControl, FormLabel, Input, Button } from '@chakra-ui/react'
+import { Box, Heading, Text, FormControl, FormLabel, Input, Button } from '@chakra-ui/react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { registerAction } from '../redux/actions'
 
 const RegistPage = (props) => {
     const [data, setData] = useState({ fullname: '', email: '', password: '', role: 'user', status: 'active' })
-    const [movePage, setMovePage] = useState(false)
     const dispatch = useDispatch()
     const navigate = useNavigate()
 

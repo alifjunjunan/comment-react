@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Menu, MenuButton, MenuList, MenuItem, Text, Icon, Heading } from '@chakra-ui/react'
+import { Box, Text, Icon, Heading } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import { CgCloseO } from 'react-icons/cg'
 import NavbarComp from '../components/NavbarComp'

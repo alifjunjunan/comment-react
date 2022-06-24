@@ -3,8 +3,8 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import NavbarComp from '../components/NavbarComp'
 import { Box, Button, Heading, Text } from '@chakra-ui/react'
-import { useDispatch, useSelector } from 'react-redux';
-import { editDiaryAction, postDiaryAction } from '../redux/actions/diaryAction';
+import { useDispatch } from 'react-redux';
+import { editDiaryAction } from '../redux/actions/diaryAction';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { API_URL } from '../helper';

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Menu, MenuButton, MenuList, MenuItem, Text, Icon, Spinner } from '@chakra-ui/react'
-import { Link, Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FiChevronDown } from 'react-icons/fi'
 import { useSelector, useDispatch } from 'react-redux'
 import { logoutAction } from '../redux/actions'
