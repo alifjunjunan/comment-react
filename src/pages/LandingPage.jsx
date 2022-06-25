@@ -42,26 +42,25 @@ const LandingPage = (props) => {
                     <LoadingPage />
                     :
                     <Box w={{ base: '85%', md: '70%' }} m='150px auto'>
-                        <Heading as='h3' size={{ base: 'sm', md: 'lg' }} textAlign='center'>Welcome to YourDiary</Heading>
-                        <Box mt='25px' w='100%' borderRadius='10px' boxShadow='lg' maxHeight='500px'>
-                            <Box padding='20px' display='flex'>
+                        <Heading as='h3' size={{ base: 'md', sm: 'lg' }} textAlign='center'>Welcome to YourDiary</Heading>
+                        <Box mt='25px' w='100%' borderRadius='10px' boxShadow='lg' maxH={{ base: '550px', sm: '600px', md: '700px' }}>
+                            <Box padding='20px' display='flex' flexDirection={{ base: 'column', sm: 'column', md: 'column', lg: 'row' }}>
                                 <Box flexBasis='50%' m={{ base: 'auto 0', md: '0' }}>
                                     <Image src={welcome} w='100%' maxHeight='300px' objectPosition='center' objectFit='cover' alt='welcome' />
                                 </Box>
                                 <Box flexBasis='50%' marginLeft='20px'>
-                                    <Heading as='h3' size={{ base: 'xs', md: 'md' }} textAlign='center'> user Login </Heading>
                                     <FormControl mt='10px'>
-                                        <FormLabel id='email' fontSize={{ base: '10px', md: '16px' }}>Email</FormLabel>
-                                        <Input type='email' size={{ base: 'xs', md: 'md' }} name='email' value={data.email} onChange={(event) => handleInput(event)} />
+                                        <FormLabel id='email' fontSize={{ base: '11px', sm: '15px', md: '16px' }}>Email</FormLabel>
+                                        <Input type='email' size={{ base: 'xs', sm: 'md' }} name='email' value={data.email} onChange={(event) => handleInput(event)} />
                                     </FormControl>
                                     <FormControl mt='10px'>
-                                        <FormLabel id='password' fontSize={{ base: '10px', md: '16px' }}>Password</FormLabel>
-                                        <Input type='password' size={{ base: 'xs', md: 'md' }} name='password' value={data.password} onChange={(event) => handleInput(event)} />
+                                        <FormLabel id='password' fontSize={{ base: '11px', sm: '15px', md: '16px' }}>Password</FormLabel>
+                                        <Input type='password' size={{ base: 'xs', sm: 'md' }} name='password' value={data.password} onChange={(event) => handleInput(event)} />
                                     </FormControl>
-                                    <Button colorScheme='cyan' size={{ base: 'xs', md: 'md' }} fontSize={{ base: '10px', md: '16px' }} mt='10px' w='100%' type='submit' onClick={handdleLogin}>Login</Button>
+                                    <Button colorScheme='cyan' color='white' size={{ base: 'xs', sm: 'md' }} fontSize={{ base: '11px', md: '16px' }} mt='10px' w='100%' type='submit' onClick={handdleLogin}>Login</Button>
                                     <Box mt='15px' display='flex' justifyContent='center'>
-                                        <Text fontSize={{ base: '8px', md: '15px' }} mr='5px'>Don't have an account?</Text>
-                                        <Text p='1px 7px' fontWeight='bold' fontSize={{ base: '7px', md: '14px' }} backgroundColor='#0097e6' borderRadius='8px' color='white' boxShadow='md'>
+                                        <Text fontSize={{ base: '11px', sm: '15px', md: '15px' }} mr='5px'>Don't have an account?</Text>
+                                        <Text p='1px 7px' fontWeight='bold' fontSize={{ base: '9px', sm: '13px', md: '14px' }} backgroundColor='#0097e6' borderRadius='8px' color='white' boxShadow='md'>
                                             <Link to='/register'>
                                                 Sign Up
                                             </Link>

@@ -4,7 +4,7 @@ import loading from '../assets/loading.gif'
 const LoadingPage = () => {
     return (
         <>
-            <Box w='30%' m={{ base: '35vh auto', lg: '20vh auto' }}>
+            <Box w='30%' m={{ base: '40vh auto', lg: '20vh auto' }}>
                 <Image src={loading} w='100%' objectPosition='center' objectFit='cover' />
             </Box>
         </>
